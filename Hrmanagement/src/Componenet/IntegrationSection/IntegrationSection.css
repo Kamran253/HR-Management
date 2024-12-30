@@ -1,0 +1,267 @@
+  .integration-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+
+  .slider-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .Border {
+    position: absolute;
+    left: 50px;
+    top: -40px;
+    bottom: 0;
+    height: 120%;
+    /* width: 20px; */
+    width: 70px;
+  }
+
+  .slider-border {
+    position: absolute;
+    right: -60px;
+    top: 20px;
+    bottom: 0;
+    height: 110%;
+    width: 70px;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .slider-container {
+    width: 200px;
+  }
+    
+  .imgg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .slider-imagee {
+    width: 50%;
+    margin-left: 100px;
+    
+  } 
+
+  .integration-info {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+    left: 60px;
+    /* margin-left: 70px; */
+  }
+
+  .integration-info p,
+  .integration-info h2 {
+    margin: 10px 0;
+    /* font-size: 30px; */
+  }
+  
+
+  .integration-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  @media (max-width: 480px) {
+  .integration-info{
+    position: relative;
+    left: 0;
+    /* margin-left: -174px;
+    width: 90%; */
+  }
+  .slider-area{
+    width: 90%;
+    margin-left: -50px; ;
+  } 
+  .Border{
+    margin-left: -50px;
+  }
+  .slider-border{
+    margin-top: -50px;
+    margin-right: 70px;
+  }
+  .slider-container{
+    margin-left: -100px;
+  }
+  }
+  @media (min-width: 768px) {
+    .integration-section {  
+      margin: 0% auto;
+      width: 90%;
+      /* margin-left: -100px; */
+      flex-direction: row;
+    }
+    
+    .Border,
+    .slider-border {
+      /* display:;   */
+    }
+
+    .flex2 {
+      flex-direction: row;
+      width: auto;
+    }
+
+    .integration-info {
+      text-align: left;
+      max-width: 500px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .slider-container {
+      width: 300px; /* Increase width on larger screens */
+    }.integration-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.slider-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Border {
+  position: absolute;
+  left: 50px;
+  top: -40px;
+  bottom: 0;
+  height: 120%;
+  width: 70px;
+}
+
+.slider-border {
+  position: absolute;
+  right: -60px;
+  top: 20px;
+  bottom: 0;
+  height: 110%;
+  width: 70px;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  width: 200px;
+}
+
+.imgg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.slider-imagee {
+  width: 50%;
+  margin-left: 100px;
+}
+
+.integration-info {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  position: relative;
+  left: 60px;
+}
+
+.integration-info p,
+.integration-info h2 {
+  margin: 10px 0;
+}
+
+.integration-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .integration-info {
+    position: relative;
+    left: 0;
+  }
+  .slider-area {
+    width: 90%;
+    margin-left: -50px;
+  }
+  .Border {
+    margin-left: -50px;
+  }
+  .slider-border {
+    margin-top: -50px;
+    margin-right: 70px;
+  }
+  .slider-container {
+    margin-left: -100px;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) {
+  .integration-section {
+    margin: 0% auto;
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .flex2 {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .integration-info {
+    text-align: left;
+    max-width: 500px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1200px) {
+  .slider-container {
+    width: 300px; 
+  }
+}
+
+  }

@@ -1,0 +1,149 @@
+.main-tab-contain {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-container {
+  width: 90%; /* For responsiveness */
+  max-width: 1000px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ddd;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  /* background-color: #e7e5e5; */
+  border: none;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #eaeaea;
+  color: blue;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center;
+}
+
+.learn-section, .learn-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  width: 100%; /* Full width */
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.Logo-img {
+  width: 7% !important;  
+  height: auto;
+  position: relative;
+  top: 40px;
+  left: -250px;
+}
+
+.learn-content h2 {
+  text-align: start;
+  font-size: 1.8rem; /* Use rem for responsive typography */
+  color: #222;
+}
+
+.learn-content p {
+  text-align: start;
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.learn-link {
+  font-weight: bold;
+  color: #0062ff;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.learn-link:hover {
+  text-decoration: underline;
+}
+
+.tab-content img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    font-size: 1.25rem;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .Logo-img{
+    display: block;
+   } 
+  .learn-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .tab-content img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .learn-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .learn-content p {
+    font-size: 0.875rem;
+  }
+ .Logo-img{
+  position: relative;
+  left: -190px;
+ } 
+  .tab-content img {
+    width: 80%;
+  }
+}

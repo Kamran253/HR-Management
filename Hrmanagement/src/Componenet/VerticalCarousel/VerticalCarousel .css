@@ -1,0 +1,22 @@
+/* VerticalSlider.css */
+.slider-container {
+    /* width: 300px;
+    height: 400px; */
+    overflow: hidden; /* Hide overflow to create ticker effect */
+  }
+  
+  .slick-slide {
+    height: 100%;
+  }
+  .flex{
+    display: flex;
+  }
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #f0f0f0; /* Optional: background color for slides */
+    border-bottom: 1px solid #ddd; /* Optional: border for slides */
+  }
+  

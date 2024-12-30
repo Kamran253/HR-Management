@@ -1,0 +1,107 @@
+.cards-containe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #111;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.car {
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px); /* Default to 3 columns layout with margin */
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  min-width: 280px;
+  height: auto; /* Allow cards to expand based on content */
+}
+
+.car h3 {
+  font-size: 1.8em;
+  margin: 20px 0;
+}
+
+.ico-img {
+  width: 90px;
+}
+
+.car button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.car button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .car {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+
+  .car h3 {
+    font-size: 1.6em; /* Adjust font size for better readability */
+  }
+}
+
+/* Small screens (phones in landscape mode) */
+@media (max-width: 768px) {
+  .cards-containe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .car {
+   width: 80%;
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 10px 0; /* Adjust margin for small screens */
+  }
+
+  .car h3 {
+    font-size: 1.4em; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Very small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+  .car h3 {
+    font-size: 1.0em; /* Further reduce font size */
+  }
+
+  .ico-img {
+    width: 60px; /* Adjust icon size */
+  }
+
+  .car button {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 0.9em;
+  }
+  .car{
+   width: 80%;
+  }
+ 
+}
+@media (max-width: 349px) {
+  .car {
+    margin: 0%;
+    padding: 0%;
+    width: 40% !important;
+   } 
+}

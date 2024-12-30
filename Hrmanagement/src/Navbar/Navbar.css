@@ -1,0 +1,147 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  height: 70px;
+  transition: height 0.3s ease;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  flex-grow: 1;
+  justify-content: flex-end;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.navbar-links.open {
+  display: flex;
+  opacity: 1;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px; /* Default font size */
+}
+
+.navbar-links a:hover {
+  color: blue;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger.open .bar {
+  background-color: #007bff;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Adjust font size for larger screens */
+  @media (min-width: 721px) {
+    .navbar-links a {
+      /* font-size: 10px;   */
+    }
+  }
+@media (min-width: 790px)  and (max-width: 1076px) {
+  .navbar-links a {
+    font-size: 10px; 
+  }
+}
+@media (min-width: 721px) {
+  .navbar-links a {
+    /* font-size: 10px;  */
+  }
+}
+
+@media (max-width: 784px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px; 
+    /* margin: 20px; */
+    gap: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .button {
+    display: none; /* Hide button in mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .navbar-links a {
+    font-size: 14px; /* Further decrease font size for smaller screens */
+  }
+}

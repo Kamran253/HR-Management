@@ -1,0 +1,77 @@
+.slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto; /* Make slides shrink to fit */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; /* Add some spacing */
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.great-teams {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.where {
+  font-size: 49px;
+}
+
+.dic {
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Translate by 100% of its width */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    width: 40%; /* Adjust width for smaller screens */
+  }
+  
+  .where {
+    font-size: 36px;
+  }
+  
+  .dic {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .where {
+    font-size: 28px;
+  }
+  
+  .dic {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
