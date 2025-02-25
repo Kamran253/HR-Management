@@ -6,7 +6,13 @@ import cors from 'cors';
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors()); // Enable CORS
+app.use(cors(
+   {
+    origin:["https://deploy"]
+
+   }
+
+)); // Enable CORS
 
 // MongoDB Connection
 const mongoUrl = "mongodb+srv://kamran:kamran@cluster0.97y4r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
